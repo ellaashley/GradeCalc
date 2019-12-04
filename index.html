@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ella's Grade Calculator</title>
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="css.css"/>
+    <h1>Grade Calculator</h1>
+</head>
+<body>
+
+<table id="table" border="1" cellspacing="2" cellpadding="2">
+    <tr>
+        <td></td>
+        <td>Grades</td>
+        <td>Weight (%)</td>
+    </tr>
+    <tr>
+        <td id = "row1">Homework</td>
+        <td><input id="hwG" value = "90,90,90"></td>
+        <td><input id="hwW" value = "20"></td>
+    </tr>
+    <tr>
+        <td id = "row2">Classwork</td>
+        <td><input id="cwG" value = "90,90,90"></td>
+        <td><input id="cwW" value = "20"></td>
+    </tr>
+    <tr>
+        <td id = "row3">Tests</td>
+        <td><input id="testsG" value = "90,90,90"></td>
+        <td><input id="testsW" value = "20"></td>
+    </tr>
+    <tr>
+        <td id = "row4">Participation</td>
+        <td><input id="partG" value = "90,90,90"></td>
+        <td><input id="partW" value = "20"></td>
+    </tr>
+    <tr>
+        <td id= "row5">Projects</td>
+        <td><input id="projG" value = "90,90,90"></td>
+        <td><input id="projW" value = "10"></td>
+    </tr>
+</table>
+
+<button id= "button" onclick="calculateCurrentGrade()">Calculate Current Grade</button>
+<div id = "currentGrade"></div>
+
+<table id="table2" border="1" cellspacing="2" cellpadding="2">
+    <tr>
+        <td id="row6">Desired Grade in Class</td>
+        <td><input id="finalG" placeholder ="Desired Grade"></td>
+    </tr>
+    <tr>
+        <td>Weight of Final (%)</td>
+        <td><input id="finalW" value = "10"></td>
+    </tr>
+</table>
+
+<button id= "button2" onclick="calculateFinal()">Calculate Final Exam Grade Needed</button>
+<div id = "examGrade"></div>
+
+
+</body>
+</html>
